@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add User"
+        android:id="@+id/add_button"
+        android:layout_x="20dp"
+        android:layout_y="452dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/back_button"
+        android:layout_x="290dp"
+        android:layout_y="456dp" />
+
+    <EditText
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_x="146dp"
+        android:layout_y="27dp" />
+
+    <EditText
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_x="144dp"
+        android:layout_y="87dp" />
+
+    <TextView
+        android:layout_width="234dp"
+        android:layout_height="68dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/hash"
+        android:layout_x="146dp"
+        android:layout_y="149dp"
+        android:enabled="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/roleID"
+        android:layout_x="147dp"
+        android:layout_y="190dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="username :"
+        android:id="@+id/textView3"
+        android:layout_x="5dp"
+        android:layout_y="46dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="password :"
+        android:id="@+id/TV1"
+        android:layout_x="3dp"
+        android:layout_y="104dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="hash :"
+        android:id="@+id/TV2"
+        android:layout_x="3dp"
+        android:layout_y="158dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="role ID : "
+        android:id="@+id/TV3"
+        android:layout_x="-1dp"
+        android:layout_y="207dp" />
+</AbsoluteLayout>
