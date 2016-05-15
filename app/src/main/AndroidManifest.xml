@@ -25,7 +25,6 @@
         <activity android:name="com.example.elliott.nfc2.AddActivity"> </activity>
         <activity android:name="com.example.elliott.nfc2.AdminActivity"></activity>
         <activity android:name="com.example.elliott.nfc2.DetailActivity"></activity>
-        <activity android:name="com.example.elliott.nfc2.UserListActivity"></activity>
     </application>
 
 </manifest>

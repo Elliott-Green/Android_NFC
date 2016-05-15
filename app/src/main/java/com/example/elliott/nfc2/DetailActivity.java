@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,8 +28,12 @@ public class DetailActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
+        final DB db = new DB();
+
+        username = (EditText)findViewById(R.id.username);
+        password = (EditText)findViewById(R.id.password);
         hash = (TextView)findViewById(R.id.hash);
-        
+        roleID = (EditText)findViewById(R.id.roleID);
         Bundle extras = getIntent().getExtras();
         if (extras != null)
         {
@@ -53,8 +58,21 @@ public class DetailActivity extends Activity
             @Override
             public void onClick(View v)
             {
-                Intent i = new Intent(DetailActivity.this, DetailActivity.class);
-                startActivity(i);
+                new Thread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
+                        Log.w("Database - Username", username.getText().toString().trim());
+                        Log.w("Database - Password", password.getText().toString().trim());
+                        Log.w("Database - Hash", hash.getText().toString().trim());
+                        db.addUser(username.getText().toString().trim(),
+                                   password.getText().toString().trim(),
+                                   hash.getText().toString().trim(),
+                                   Integer.parseInt(roleID.getText().toString()));
+
+                    }
+                }).start();
+
             }
         });
     }

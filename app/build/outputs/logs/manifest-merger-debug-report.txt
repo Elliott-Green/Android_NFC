@@ -1,6 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:2:1-30:12
+	xmlns:android
+		ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:2:11-69
 	package
 		ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml
@@ -8,8 +10,6 @@ ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:2:1-31
 	android:versionName
 		INJECTED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
 		INJECTED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml
@@ -28,7 +28,7 @@ ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:7:5-9:
 	android:name
 		ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:8:9-44
 application
-ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:11:5-29:19
+ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:11:5-28:19
 	android:label
 		ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:14:9-41
 	android:allowBackup
@@ -65,12 +65,9 @@ activity#com.example.elliott.nfc2.DetailActivity
 ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:27:9-85
 	android:name
 		ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:27:19-73
-activity#com.example.elliott.nfc2.UserListActivity
-ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:28:9-87
-	android:name
-		ADDED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml:28:19-75
 uses-sdk
 INJECTED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.0] C:\Users\Elliott\Desktop\NFC2\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.0\AndroidManifest.xml:18:5-42
 	android:targetSdkVersion
 		INJECTED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Elliott\Desktop\NFC2\app\src\main\AndroidManifest.xml
