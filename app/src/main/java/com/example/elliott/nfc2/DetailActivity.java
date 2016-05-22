@@ -65,7 +65,7 @@ public class DetailActivity extends Activity
                         Log.w("Database - Username", username.getText().toString().trim());
                         Log.w("Database - Password", password.getText().toString().trim());
                         Log.w("Database - Hash", hash.getText().toString().trim());
-                        db.addUser(username.getText().toString().trim(),
+                        db.setupUser(username.getText().toString().trim(),
                                    password.getText().toString().trim(),
                                    hash.getText().toString().trim(),
                                    Integer.parseInt(roleID.getText().toString()));
